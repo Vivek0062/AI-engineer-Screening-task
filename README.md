@@ -6,8 +6,9 @@ This project provides a solution for ingesting shipment data from an Excel file 
 
 ## Project Structure
 
-- `Import_data.py`: A script to read shipment data from `shipment_data.xlsx` and ingest it into a MongoDB collection.
+- `Import data.py`: A script to read shipment data from `shipment_data.xlsx` and ingest it into a MongoDB collection.
 - `app.py`: A FastAPI application that exposes a `/query` endpoint to interpret natural language queries and retrieve data from MongoDB.
+- 'query.py' - script to retrive the data from mongodb
 - `requirements.txt`: List of Python dependencies.
 - `shipment_data.xlsx`: Source data file (Excel format).
 
@@ -18,16 +19,16 @@ This project provides a solution for ingesting shipment data from an Excel file 
 
 ## Installation
 
-1. Clone the repository (if applicable) or navigate to the project directory.
+1. Navigate to the project directory.
 
 2. Create a virtual environment (recommended):
-   ```bash
+   ```
    python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   venv\Scripts\activate
    ```
 
 3. Install the dependencies:
-   ```bash
+   ```
    pip install -r requirements.txt
    pip install fastapi uvicorn  # Required for the API (if not in requirements.txt)
    ```
@@ -39,8 +40,8 @@ This project provides a solution for ingesting shipment data from an Excel file 
 Before running the API, you need to populate the database with shipment data.
 
 Run the ingestion script:
-```bash
-python ingest_shipments.py
+```
+python Import Data.py
 ```
 This will:
 - Read `shipment_data.xlsx`.
@@ -51,7 +52,7 @@ This will:
 ### 2. Run the API
 
 Start the FastAPI server:
-```bash
+```
 uvicorn app:app --reload
 ```
 The API will be available at `http://127.0.0.1:8000`.
