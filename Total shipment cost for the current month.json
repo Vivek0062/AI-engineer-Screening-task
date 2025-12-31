@@ -1,0 +1,9 @@
+{
+  "query": "Show total shipment cost for the current month",
+  "result": [
+    {
+      "_id": null,
+      "total_cost": 39288.99
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "query": "Provide a cost analysis of shipments grouped by status",
+  "result": [
+    {
+      "_id": "canceled",
+      "count": 1176,
+      "total_cost": 493588.73
+    },
+    {
+      "_id": "draft",
+      "count": 1190,
+      "total_cost": 6822
+    },
+    {
+      "_id": "shipped",
+      "count": 2545,
+      "total_cost": 746260.31
+    },
+    {
+      "_id": "blocked",
+      "count": 1,
+      "total_cost": 0
+    },
+    {
+      "_id": "validated",
+      "count": 53,
+      "total_cost": 0
+    }
+  ]
+}
