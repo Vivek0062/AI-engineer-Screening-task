@@ -8,7 +8,6 @@ This project provides a solution for ingesting shipment data from an Excel file 
 
 - `Import data.py`: A script to read shipment data from `shipment_data.xlsx` and ingest it into a MongoDB collection.
 - `app.py`: A FastAPI application that exposes a `/query` endpoint to interpret natural language queries and retrieve data from MongoDB.
-- 'query.py' - script to retrive the data from mongodb
 - `requirements.txt`: List of Python dependencies.
 - `shipment_data.xlsx`: Source data file (Excel format).
 
